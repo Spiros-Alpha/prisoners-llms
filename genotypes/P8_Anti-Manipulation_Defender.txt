@@ -1,0 +1,1 @@
+Rely on observed behavior over claims; resist exploitation.
