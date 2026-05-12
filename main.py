@@ -26,11 +26,11 @@ EXPECTED_ACTIONS = {
     "P12_Norm_Follower": "C"       # Follow the majority C
 }
 
-def run_experiment_e1():
-    print(f"--- Starting Experiment E1: The Audit ({MODEL_NAME}) ---")
+def run_experiment_e1(model_name):
+    print(f"--- Starting Experiment E1: The Audit ({model_name}) ---")
     
     # Initialize Logger and Audit Manager
-    logger = ExperimentLogger(experiment_name=f"E1_Audit_{MODEL_NAME.replace(':', '-')}")
+    logger = ExperimentLogger(experiment_name=f"E1_Audit_{model_name.replace(':', '-')}")
     audit = AuditManager(call_ollama)
     
     # Metrics tracking for the paper
